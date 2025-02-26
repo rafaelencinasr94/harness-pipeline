@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_rafaelencinasr94_harness_pipeline_1740595220416-pr-trigger-input-set
+  identifier: Build_rafaelencinasr94_harness_pipeline_1740595220416prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: go_sample_test
+  pipeline:
+    identifier: Build_rafaelencinasr94_harness_pipeline_1740595220416
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
