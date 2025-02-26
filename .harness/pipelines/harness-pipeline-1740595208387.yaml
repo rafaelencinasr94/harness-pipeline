@@ -1,0 +1,35 @@
+pipeline:
+  identifier: Build_rafaelencinasr94_harness_pipeline_1740595220416
+  name: Build harness-pipeline
+  orgIdentifier: default
+  projectIdentifier: go_sample_test
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1740595199567
+        repoName: rafaelencinasr94/harness-pipeline
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          caching:
+            enabled: true
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
