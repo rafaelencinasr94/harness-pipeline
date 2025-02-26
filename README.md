@@ -1,2 +1,2 @@
-# harness-pipeline
+# Harness pipeline
 Testing harness pipeline
